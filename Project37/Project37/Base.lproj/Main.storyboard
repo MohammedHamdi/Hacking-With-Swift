@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KPg-Qh-Gm5">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zg8-ll-7uh">
+            <objects>
+                <viewController id="KPg-Qh-Gm5" customClass="ViewController" customModule="Project37" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KpW-Hy-v26">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-QJ-UaY" customClass="GradientView" customModule="Project37" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4db-4l-oEr">
+                                <rect key="frame" x="166" y="27.666666666666657" width="480" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="4Tq-Xj-Wng"/>
+                                    <constraint firstAttribute="height" constant="320" id="y5X-Zn-tuJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ar5-QJ-UaY" secondAttribute="trailing" id="8Ro-4s-OMI"/>
+                            <constraint firstItem="4db-4l-oEr" firstAttribute="centerX" secondItem="KpW-Hy-v26" secondAttribute="centerX" id="9QF-1z-ELp"/>
+                            <constraint firstItem="ar5-QJ-UaY" firstAttribute="top" secondItem="KpW-Hy-v26" secondAttribute="top" id="EEv-FY-LNn"/>
+                            <constraint firstItem="ar5-QJ-UaY" firstAttribute="leading" secondItem="KpW-Hy-v26" secondAttribute="leading" id="J7Y-qt-6gy"/>
+                            <constraint firstAttribute="bottom" secondItem="ar5-QJ-UaY" secondAttribute="bottom" id="NDb-lj-U5a"/>
+                            <constraint firstItem="4db-4l-oEr" firstAttribute="centerY" secondItem="KpW-Hy-v26" secondAttribute="centerY" id="fsd-23-kxA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardContainer" destination="4db-4l-oEr" id="91x-HV-i7g"/>
+                        <outlet property="gradientView" destination="ar5-QJ-UaY" id="PSD-KU-HxN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLZ-C6-bsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.52709359605913" y="92"/>
+        </scene>
+    </scenes>
+</document>
